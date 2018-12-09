@@ -1,0 +1,38 @@
+{
+  "name": "investor-services-fellowship",
+  "version": "1.0.0",
+  "description": "If you're seeing this but haven't yet applied to our fellowship, check out these postings: - [San Francisco Fellowship](https://jobs.lever.co/carta/01def30d-3ffa-4be8-8c02-48615f8937ee) - [Seattle Fellowship](https://jobs.lever.co/carta/50511949-7cc3-4d93-971f-2c7a6ccf8cf9)",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/index.js",
+    "build": "webpack -d --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atomicn50/investor-services-fellowship.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atomicn50/investor-services-fellowship/issues"
+  },
+  "homepage": "https://github.com/atomicn50/investor-services-fellowship#readme"
+}
