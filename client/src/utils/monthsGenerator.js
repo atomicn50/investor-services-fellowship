@@ -1,19 +1,4 @@
-const convertNumberToString = (number) => {
-  if (number < 10) {
-    return `0${number.toString()}`;
-  } else {
-    return number.toString();
-  }
-}
-
-const generateValues = (startValue, numberOfValues) => {
-  const values = [];
-  while (numberOfValues) {
-    values.push(convertNumberToString(startValue++));
-    numberOfValues -= 1;
-  }
-  return values;
-}
+import {generateValues, generateOptions } from './general';
 
 const generateMonths = (startMonth, numberOfMonths) => {
   const months = {
@@ -39,16 +24,8 @@ const generateMonths = (startMonth, numberOfMonths) => {
   return monthsArray;
 }
 
-const generateOptions = () => {
-  const months = generateMonths(1, 12);
-  const values = generateValues(1, 12);
-  const options = [['', 'Select Month']];
-  months.forEach((month, index) => {
-    options.push([values[index], month]);
-  });
-  return options;
-}
+const months = generateMonths(1, 12);
+const monthValues = generateValues(1, 12);
+const monthsArray = generateOptions(months, monthValues, 'Select Month');
 
-const optionsArray = generateOptions();
-
-export default optionsArray;
+export default monthsArray;
