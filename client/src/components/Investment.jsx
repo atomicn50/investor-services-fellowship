@@ -1,4 +1,5 @@
 import React from 'react';
+import Assets from './Assets.jsx';
 import { CompanyName, Share, Cost } from '../../../css/styles.jsx';
 
 const Investment = ({ investment }) => (
@@ -7,7 +8,8 @@ const Investment = ({ investment }) => (
       {investment.name} 
       <Share>{investment.quantity}</Share>
       <Cost>{`$  ${investment.cost.$}`}</Cost>
-    </CompanyName>  
+    </CompanyName>
+    <Assets assets={investment.issued_assets} /> 
   </div>
 );
 

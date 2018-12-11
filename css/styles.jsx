@@ -49,9 +49,36 @@ const Share = styled.section`
 
 const Cost = styled.section`
   position: absolute;
-  left 920px;
+  left: 920px;
   font-size: 15px;
   font-weight: 700;
+`;
+
+const AssetClass = styled.section`
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: inline-flex;
+  left: 180px;
+  font-size: 15px;
+`;
+
+const InvestmentDate = styled.section`
+  position: absolute;
+  left: 380px;
+  font-size: 15px;
+`;
+
+const Quantity = styled.section`
+  position: absolute;
+  left: 590px;
+  font-size: 15px;
+`;
+
+const AssetCost = styled.section`
+  position: absolute;
+  left: 743px;
+  font-size: 15px;
 `;
 
 export {
@@ -64,4 +91,8 @@ export {
   CompanyName,
   Share,
   Cost,
+  AssetClass,
+  InvestmentDate,
+  Quantity,
+  AssetCost,
 }
