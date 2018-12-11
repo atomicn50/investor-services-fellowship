@@ -3,6 +3,7 @@ import getData from '../utils/data';
 import dummyData from '../../../data/dummyData';
 import DatePicker from './DatePicker.jsx';
 import Header from './Header.jsx';
+import Investments from './Investments.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -48,6 +49,9 @@ class App extends Component {
         />
         <br />
         <Header />
+        <br />
+        <br />
+        <Investments investmentData={this.state.data} />
       </div>
     );
   }

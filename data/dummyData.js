@@ -1,4 +1,4 @@
-const dummyData = {
+const dummyData = [{
 	"id": 11,
 	"issued_assets": [{
 		"id": 14,
@@ -22,6 +22,6 @@ const dummyData = {
 		"$": 700000.0
 	},
 	"name": "Arcanerover"
-};
+}];
 
 export default dummyData;

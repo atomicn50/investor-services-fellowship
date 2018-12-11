@@ -32,6 +32,28 @@ const ColumnFive = styled.section`
   margin-right: 100px;
 `;
 
+const CompanyName = styled.section`
+  display: inline-flex;
+  width: 100%;
+  background-color: LightGray;
+  font-size: 15px;
+  font-weight: 700;
+`;
+
+const Share = styled.section`
+  position: absolute;
+  left: 780px;
+  font-size: 15px;
+  font-weight: 700;
+`;
+
+const Cost = styled.section`
+  position: absolute;
+  left 920px;
+  font-size: 15px;
+  font-weight: 700;
+`;
+
 export {
   HeaderStyle,
   ColumnOne,
@@ -39,4 +61,7 @@ export {
   ColumnThree,
   ColumnFour,
   ColumnFive,
+  CompanyName,
+  Share,
+  Cost,
 }
